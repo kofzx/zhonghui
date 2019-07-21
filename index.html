@@ -4,48 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title></title>
-    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/css/reset.css">
-    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="header visible-md visible-lg">
-        <img class="logo" src="./public/images/logo.png" alt="">
+        <img class="logo" src="images/logo.png" alt="">
         <div class="yellow-line"></div>
-        <div class="nav-box">
-            <div class="nav-box__item selected">公司简介</div>
-            <div class="nav-box__item">公司理念</div>
-            <div class="nav-box__item">公司业务</div>
+        <div class="nav-box nav-hook">
+            <div class="nav-box__item nav-hook__item selected">公司简介</div>
+            <div class="nav-box__item nav-hook__item">公司理念</div>
+            <div class="nav-box__item nav-hook__item">公司业务</div>
         </div>
     </div>
     <div class="header-mobile hidden-md hidden-lg">
-        <img class="logo" src="./public/images/logo.png" alt="">
+        <img class="logo" src="images/logo.png" alt="">
         <div class="yellow-line"></div>
     </div>
-    <div class="header-mobile__nav-box hidden-md hidden-lg">
-        <div class="header-mobile__nav-box__item selected">公司简介</div>
-        <div class="header-mobile__nav-box__item">公司理念</div>
-        <div class="header-mobile__nav-box__item">公司业务</div>
+    <div class="header-mobile__nav-box nav-hook hidden-md hidden-lg">
+        <div class="header-mobile__nav-box__item nav-hook__item selected">公司简介</div>
+        <div class="header-mobile__nav-box__item nav-hook__item">公司理念</div>
+        <div class="header-mobile__nav-box__item nav-hook__item">公司业务</div>
     </div>
     <div class="banner-box">
-        <div class="bg-img visible-md visible-lg" style="background-image: url('./public/images/banner1.jpg');"></div>
-        <img class="img-responsive hidden-md hidden-lg" src="./public/images/banner1.jpg" alt="">
+        <div class="bg-img" style="background-image: url('images/banner2.jpg');"></div>
     </div>
     <div class="desc-box container">
         <div class="row">
             <div class="title-box">
-                <h2 class="main-title">公司简介</h2>
+                <h2 id="title" class="main-title">公司简介</h2>
+            </div>
+            <div id="desc" class="desc">
+                广东众汇医药有限公司（简称：众汇医药）位于我国首批经济特区之一，
+                美丽的海滨邹鲁城市汕头市，坐落于汕头市黄河路19号智汇时代。
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="footer-main-box">
-
+            <div class="container">
+                <div class="row">
+                    <div class="contact-box col-xs-12 col-md-6">
+                        <p class="contact-title">联系我们</p>
+                        <a href="tel://075486596503">0754-86596503</a>
+                        <div class="cell-box">
+                            <p>电话：</p>
+                            <a class="phone" href="tel://13902714523">13902714523</a>
+                        </div>
+                        <div class="cell-box">
+                            <p>微信：ZH13902714523</p>
+                        </div>
+                        <div class="cell-box">
+                            <p>地址：广东省汕头市黄河路19号智汇时代805</p>
+                        </div>
+                    </div>
+                    <div class="qrcode-box col-xs-12 col-md-6">
+                        <p>微信公众号</p>
+                        <img class="qrcode" src="images/qrcode.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <p class="copyright">Copyright © 2010-2018 版权所有 ICP备案：粤ICP备16100694号-1 All Rights Reserved.</p>
     </div>
     <!--[if lt IE 9]>
         <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
